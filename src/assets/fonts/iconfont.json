@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11892051",
+      "name": "文字识别",
+      "font_class": "wenzishibie",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "14370712",
+      "name": "荷",
+      "font_class": "he",
+      "unicode": "e9d0",
+      "unicode_decimal": 59856
+    }
+  ]
+}
