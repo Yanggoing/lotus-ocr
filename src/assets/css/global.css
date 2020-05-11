@@ -1,0 +1,23 @@
+/* 全局样式表 */
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 1366px;
+}
+
+.el-button {
+    float: left;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.el-header {
+    line-height: 100px;
+    font-family: 'STXingkai';
+    font-size: 30px;
+    color: #fff;
+    background-color: #373d41;
+}
