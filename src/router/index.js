@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-const Home = () => import( /* webpackChunkName: "home" */ '../components/Home.vue')
+// const Home = () => import( /* webpackChunkName: "home" */ '../components/Home.vue')
 
-
+import Home from '../components/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [{
