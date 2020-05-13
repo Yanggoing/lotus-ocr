@@ -58,7 +58,8 @@ export default {
       previewVisible: false,
       fileTmp: "",
       rateText: ["瓜皮", "多捞啊", "有东西", "牛逼", "起飞"],
-      stars: 0
+      stars: 0,
+      fileRemain:false
     };
   },
   methods: {
@@ -81,14 +82,21 @@ export default {
     getFileValue(file) {
       this.fileTmp = file.raw;
       this.$message.success("上传图片成功!");
+      this.fileRemain = false
     },
     handleRemove() {
+      this.textValue = "";
+      this.fileTmp = "";
       this.$message.error("删除图片成功!");
     },
     textRecognition() {
       if (this.fileTmp === "") {
         this.$message.error("请先上传图片");
         return;
+      }
+      if(this.fileRemain){
+        this.$message.error('请勿重复识别一张图片!')
+        return
       }
       this.getBase64(this.fileTmp).then(async res => {
         this.base64Data = res.substring(res.indexOf(",") + 1);
@@ -106,8 +114,9 @@ export default {
 ${item.word}`;
             }
           });
-          this.$message.success("识别成功!");
           this.textValue = t;
+          this.$message.success("识别成功!");
+          this.fileRemain = true
         } else {
           this.$message.error("识别失败!");
         }
@@ -126,7 +135,7 @@ ${item.word}`;
 .layout {
   position: relative;
   top: 180px;
-  left: 500px;
+  margin: auto;
   width: 920px;
 }
 .upload-container {
