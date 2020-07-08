@@ -42,7 +42,7 @@
         </div>
       </el-card>
       <div class="welcome-container">
-        <span>欢迎计算机视觉老师莅临体验！</span>
+        <span>欢迎体验使用！</span>
       </div>
     </div>
   </div>
@@ -176,7 +176,8 @@ ${item.word}`;
 .welcome-container {
   position: absolute;
   top: -100px;
-  left: 270px;
+  left: 350px;
   font-size: 30px;
+  color: whitesmoke;
 }
 </style>
