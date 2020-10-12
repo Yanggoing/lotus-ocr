@@ -1,5 +1,5 @@
 const Client = require('aliyun-api-gateway').Client
-const client = new Client('203814369', 'vont22ythnz5obhsz4ggv3n6b4ktee0r')
+const client = new Client('', '')
 const express = require('express')
 const bodyParser = require('body-parser')
 
